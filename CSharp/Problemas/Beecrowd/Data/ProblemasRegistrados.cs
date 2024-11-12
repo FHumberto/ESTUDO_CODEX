@@ -4,7 +4,7 @@ using Beecrowd.Template;
 namespace Beecrowd.Data;
 internal class ProblemasRegistrados
 {
-    private readonly Dictionary<string, Problema> listaProblemas1 = new()
+    private readonly Dictionary<string, Problema> listaProblemas = new()
     {
        { "1000", new B1000() },
        { "1001", new B1001() },
@@ -13,6 +13,6 @@ internal class ProblemasRegistrados
 
     public Dictionary<string, Problema> GetlistaProblemas()
     {
-        return listaProblemas1;
+        return listaProblemas;
     }
 }
