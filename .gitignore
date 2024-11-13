@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/CSharp/Problemas/Beecrowd/.cr/personal/FavoritesList
+/CSharp/Problemas/Beecrowd/.idea/.idea.Beecrowd/.idea
