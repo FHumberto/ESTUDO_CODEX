@@ -1,5 +1,7 @@
 ﻿using Beecrowd.Template;
 
+namespace Beecrowd.Util;
+
 internal static class ProcedureHelpers
 {
     public static void ExecutarProblema(Dictionary<string, Problema> problemas, string problema)

@@ -9,9 +9,9 @@ internal class B1002 : Problema
     {
         Console.WriteLine($"B{problema} - Área do Círculo\n");
 
-        const double PI = 3.14159;
+        const double pi = 3.14159;
         double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-        double calculo = PI * Math.Pow(raio, 2);
+        double calculo = pi * Math.Pow(raio, 2);
 
         Console.WriteLine($"A={calculo.ToString("F4", CultureInfo.InvariantCulture)}");
     }
