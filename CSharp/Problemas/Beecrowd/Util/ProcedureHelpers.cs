@@ -7,22 +7,29 @@ internal static class ProcedureHelpers
     public static void ExecutarProblema(Dictionary<string, Problema> problemas, string problema)
     {
         string? comando;
+
         do
         {
             if (problemas.TryGetValue(problema, out Problema? problemaEncontrado))
             {
                 Console.WriteLine();
-                //* Encontra e executa o problema informado.
+
                 problemaEncontrado.PMain(problema);
+
                 Console.WriteLine();
             }
             else
             {
                 Console.WriteLine($"O problema informado não existe.");
+                return;
             }
 
+            Console.WriteLine();
+
             Mensagem(0, problema);
+
             comando = Console.ReadLine();
+
         } while (comando is "S" or "s");
     }
 
@@ -36,5 +43,10 @@ internal static class ProcedureHelpers
         {
             Console.WriteLine("Deseja executar o todo o programa novamente? [S/N]");
         }
+    }
+
+    public static void Cabecalho(string problema, string titulo)
+    {
+        Console.WriteLine($"B{problema} - {titulo}\n");
     }
 }

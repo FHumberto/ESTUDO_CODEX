@@ -1,4 +1,5 @@
 ﻿using Beecrowd.Template;
+using Beecrowd.Util;
 using System.Globalization;
 
 namespace Beecrowd.Iniciante;
@@ -7,7 +8,7 @@ internal class B1002 : Problema
 {
     public override void PMain(string problema)
     {
-        Console.WriteLine($"B{problema} - Área do Círculo\n");
+        ProcedureHelpers.Cabecalho(problema, "Áreea do Circulo");
 
         const double pi = 3.14159;
         double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);

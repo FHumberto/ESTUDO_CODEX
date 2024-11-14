@@ -1,27 +1,24 @@
 ﻿using Beecrowd.Data;
 using Beecrowd.Util;
 
-namespace Beecrowd;
+ProblemasRegistrados problemasRegistrados = new();
 
-internal class Program
+string? comando;
+
+do
 {
-    static void Main(string[] args)
-    {
-        var problemasRegistrados = new ProblemasRegistrados();
+    Console.WriteLine("Informe o número do problema: [1000, 1001, ...]");
 
-        string? comando;
-        do
-        {
-            Console.WriteLine("Informe o número do problema: [1000, 1001, ...]");
-            string? problema = Console.ReadLine();
+    string? problema = Console.ReadLine();
 
-            //* Encontra e executa o problema informado.
-            Console.WriteLine();
-            ProcedureHelpers.ExecutarProblema(problemasRegistrados.GetlistaProblemas(), problema);
-            Console.WriteLine();
+    Console.WriteLine();
 
-            ProcedureHelpers.Mensagem(1);
-            comando = Console.ReadLine();
-        } while (comando is "S" or "s");
-    }
-}
+    ProcedureHelpers.ExecutarProblema(problemasRegistrados.GetlistaProblemas(), problema);
+
+    Console.WriteLine();
+
+    ProcedureHelpers.Mensagem(1);
+
+    comando = Console.ReadLine();
+
+} while (comando is "S" or "s");
