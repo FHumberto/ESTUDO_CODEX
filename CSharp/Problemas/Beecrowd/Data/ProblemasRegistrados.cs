@@ -1,18 +1,38 @@
-﻿using Beecrowd.Iniciante;
-using Beecrowd.Template;
+﻿using Beecrowd.Template;
+using System.Reflection;
 
 namespace Beecrowd.Data;
+
 internal class ProblemasRegistrados
 {
-    private readonly Dictionary<string, Problema> _listaProblemas = new()
+    private readonly Dictionary<string, Problema> _listaProblemas;
+
+    public ProblemasRegistrados()
     {
-       { "1000", new B1000() },
-       { "1001", new B1001() },
-       { "1002", new B1002() },
-       { "1003", new B1003() },
-       { "1004", new B1004() },
-       { "1005", new B1005() },
-    };
+        _listaProblemas = [];
+        PreencherListaProblemas();
+    }
+
+    private void PreencherListaProblemas()
+    {
+        Type problemaType = typeof(Problema);
+
+        Assembly assembly = Assembly.GetAssembly(problemaType)
+            ?? throw new InvalidOperationException("Erro ao encontrar o assemby contendo o tipo Problema.");
+
+        //* busca por todas as classes de derivação do tipo Problema
+        IEnumerable<Type> problemaTypes = assembly.GetTypes()
+                                    .Where(t => t.IsSubclassOf(problemaType) && !t.IsAbstract);
+
+        //* itera e cria a instância das classes
+        foreach (Type? type in problemaTypes)
+        {
+            if (Activator.CreateInstance(type) is Problema instance)
+            {
+                _listaProblemas.Add(type.Name.Substring(1), instance);
+            }
+        }
+    }
 
     public Dictionary<string, Problema> GetlistaProblemas()
     {
