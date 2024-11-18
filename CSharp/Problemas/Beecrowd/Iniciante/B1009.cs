@@ -7,7 +7,7 @@ internal class B1009 : Problema
 {
     public override void PMain(string problema)
     {
-        ProcedureHelpers.Cabecalho("B1009", "Salário com Bônus");
+        ProcedureHelpers.Cabecalho("Salário com Bônus");
 
         _ = Console.ReadLine();
         double salarioFixoFuncionario = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);

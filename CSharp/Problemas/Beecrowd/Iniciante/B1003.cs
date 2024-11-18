@@ -7,7 +7,7 @@ public class B1003 : Problema
 {
     public override void PMain(string problema)
     {
-        ProcedureHelpers.Cabecalho(problema, "Soma Simples");
+        ProcedureHelpers.Cabecalho("Soma Simples");
 
         int a = int.Parse(Console.ReadLine());
         int b = int.Parse(Console.ReadLine());

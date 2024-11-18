@@ -8,7 +8,7 @@ internal class B1002 : Problema
 {
     public override void PMain(string problema)
     {
-        ProcedureHelpers.Cabecalho(problema, "Áreea do Circulo");
+        ProcedureHelpers.Cabecalho("Áreea do Circulo");
 
         const double pi = 3.14159;
         double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);

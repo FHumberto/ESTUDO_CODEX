@@ -7,7 +7,7 @@ internal class B1001 : Problema
 {
     public override void PMain(string problema)
     {
-        ProcedureHelpers.Cabecalho(problema, "Extremamente Básico");
+        ProcedureHelpers.Cabecalho("Extremamente Básico");
 
         int a = int.Parse(Console.ReadLine());
         int b = int.Parse(Console.ReadLine());

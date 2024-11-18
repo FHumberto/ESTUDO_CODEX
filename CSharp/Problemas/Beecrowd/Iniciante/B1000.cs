@@ -7,7 +7,7 @@ internal class B1000 : Problema
 {
     public override void PMain(string problema)
     {
-        ProcedureHelpers.Cabecalho(problema, "Hello World!");
+        ProcedureHelpers.Cabecalho("Hello World!");
 
         Console.WriteLine("Hello World!");
     }

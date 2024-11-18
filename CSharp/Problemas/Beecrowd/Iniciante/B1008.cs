@@ -7,7 +7,7 @@ internal class B1008 : Problema
 {
     public override void PMain(string problema)
     {
-        ProcedureHelpers.Cabecalho("B1008", "Salário");
+        ProcedureHelpers.Cabecalho("Salário");
 
         int funcionarioId = int.Parse(Console.ReadLine());
         int horasTrabalhadas = int.Parse(Console.ReadLine());

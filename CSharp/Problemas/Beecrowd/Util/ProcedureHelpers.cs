@@ -1,4 +1,5 @@
 ﻿using Beecrowd.Template;
+using System.Diagnostics;
 
 namespace Beecrowd.Util;
 
@@ -45,8 +46,14 @@ internal static class ProcedureHelpers
         }
     }
 
-    public static void Cabecalho(string problema, string titulo)
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+    public static void Cabecalho(string titulo)
     {
-        Console.WriteLine($"B{problema} - {titulo}\n");
+        StackTrace? stackTrace = new();
+        StackFrame? callingFrame = stackTrace.GetFrame(1);
+        var callingMethod = callingFrame.GetMethod();
+        string? className = callingMethod.DeclaringType.Name;
+        Console.WriteLine($"{className} - {titulo}\n");
     }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 }

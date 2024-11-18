@@ -8,7 +8,7 @@ internal class B1006 : Problema
 {
     public override void PMain(string problema)
     {
-        ProcedureHelpers.Cabecalho("1006", "Média 2");
+        ProcedureHelpers.Cabecalho("Média 2");
 
         double notaA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
         double notaB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
