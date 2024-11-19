@@ -15,7 +15,7 @@ internal static class ProcedureHelpers
             {
                 Console.WriteLine();
 
-                problemaEncontrado.PMain(problema);
+                problemaEncontrado.PMain();
 
                 Console.WriteLine();
             }

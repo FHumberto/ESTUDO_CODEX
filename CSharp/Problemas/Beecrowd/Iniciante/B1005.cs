@@ -6,7 +6,7 @@ namespace Beecrowd.Iniciante;
 
 public class B1005 : Problema
 {
-    public override void PMain(string problema)
+    public override void PMain()
     {
         ProcedureHelpers.Cabecalho("Média 1");
 

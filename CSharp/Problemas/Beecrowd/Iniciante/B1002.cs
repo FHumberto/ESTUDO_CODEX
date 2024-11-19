@@ -6,7 +6,7 @@ namespace Beecrowd.Iniciante;
 
 internal class B1002 : Problema
 {
-    public override void PMain(string problema)
+    public override void PMain()
     {
         ProcedureHelpers.Cabecalho("Áreea do Circulo");
 

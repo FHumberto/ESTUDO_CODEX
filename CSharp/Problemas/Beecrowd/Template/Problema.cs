@@ -2,5 +2,5 @@
 
 public abstract class Problema
 {
-    public abstract void PMain(string problema);
+    public abstract void PMain();
 }

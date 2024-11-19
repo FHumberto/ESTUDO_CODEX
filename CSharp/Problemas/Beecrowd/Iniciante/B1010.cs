@@ -5,7 +5,7 @@ namespace Beecrowd.Iniciante;
 
 internal class B1010 : Problema
 {
-    public override void PMain(string problema)
+    public override void PMain()
     {
         ProcedureHelpers.Cabecalho("Cálculo Simples");
 
