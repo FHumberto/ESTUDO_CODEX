@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace Beecrowd.Iniciante;
 
-public class B1005 : Problema
+internal class B1005 : Problema
 {
     public override void PMain()
     {

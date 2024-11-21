@@ -3,7 +3,7 @@ using Beecrowd.Util;
 
 namespace Beecrowd.Iniciante;
 
-public class B1003 : Problema
+internal class B1003 : Problema
 {
     public override void PMain()
     {
