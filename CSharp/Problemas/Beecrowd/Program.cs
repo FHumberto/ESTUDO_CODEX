@@ -5,20 +5,27 @@ ProblemasRegistrados problemasRegistrados = new();
 
 string? comando;
 
-do
+try
 {
-    Console.WriteLine("Informe o número do problema: [1000, 1001, ...]");
+    do
+    {
+        Console.WriteLine("Informe o número do problema: [1000, 1001, ...]");
 
-    string? problema = Console.ReadLine();
+        string? problema = Console.ReadLine();
 
-    Console.WriteLine();
+        Console.WriteLine();
 
-    ProcedureHelpers.ExecutarProblema(problemasRegistrados.GetlistaProblemas(), problema);
+        ProcedureHelpers.ExecutarProblema(problemasRegistrados.GetlistaProblemas(), problema);
 
-    Console.WriteLine();
+        Console.WriteLine();
 
-    ProcedureHelpers.Mensagem(1);
+        ProcedureHelpers.Mensagem(1);
 
-    comando = Console.ReadLine();
+        comando = Console.ReadLine();
 
-} while (comando is "S" or "s");
+    } while (comando is "S" or "s");
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
