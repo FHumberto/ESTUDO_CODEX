@@ -1,7 +1,7 @@
 ﻿using Beecrowd.Template;
 using Beecrowd.Util;
 
-namespace Beecrowd.Iniciante;
+namespace Beecrowd.Iniciante.Sequencial;
 
 internal class B1019 : Problema
 {
@@ -11,6 +11,6 @@ internal class B1019 : Problema
 
         int tempo = int.Parse(Console.ReadLine());
 
-        Console.WriteLine($"{tempo / 3600}:{(tempo % 3600) / 60}:{tempo % 60}");
+        Console.WriteLine($"{tempo / 3600}:{tempo % 3600 / 60}:{tempo % 60}");
     }
 }

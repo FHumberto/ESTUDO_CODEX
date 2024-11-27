@@ -2,7 +2,7 @@
 using Beecrowd.Util;
 using System.Globalization;
 
-namespace Beecrowd.Iniciante;
+namespace Beecrowd.Iniciante.Sequencial;
 
 internal class B1002 : Problema
 {

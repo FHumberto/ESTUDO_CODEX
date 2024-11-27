@@ -1,7 +1,7 @@
 ﻿using Beecrowd.Template;
 using Beecrowd.Util;
 
-namespace Beecrowd.Iniciante;
+namespace Beecrowd.Iniciante.Sequencial;
 
 internal class B1007 : Problema
 {
@@ -14,7 +14,7 @@ internal class B1007 : Problema
         int c = int.Parse(Console.ReadLine());
         int d = int.Parse(Console.ReadLine());
 
-        int diferenca = (a * b) - (c * d);
+        int diferenca = a * b - c * d;
 
         Console.WriteLine($"DIFERENCA = {diferenca}");
     }

@@ -1,7 +1,7 @@
 ﻿using Beecrowd.Template;
 using Beecrowd.Util;
 
-namespace Beecrowd.Iniciante;
+namespace Beecrowd.Iniciante.Sequencial;
 
 internal class B1016 : Problema
 {

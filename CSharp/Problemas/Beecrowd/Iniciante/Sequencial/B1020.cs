@@ -1,7 +1,7 @@
 ﻿using Beecrowd.Template;
 using Beecrowd.Util;
 
-namespace Beecrowd.Iniciante;
+namespace Beecrowd.Iniciante.Sequencial;
 
 internal class B1020 : Problema
 {
@@ -12,7 +12,7 @@ internal class B1020 : Problema
         int dias = int.Parse(Console.ReadLine());
 
         Console.WriteLine($"{dias / 365} ano(s)");
-        Console.WriteLine($"{(dias % 365) / 30} mes(es)");
-        Console.WriteLine($"{(dias % 365) % 30} dia(s)");
+        Console.WriteLine($"{dias % 365 / 30} mes(es)");
+        Console.WriteLine($"{dias % 365 % 30} dia(s)");
     }
 }

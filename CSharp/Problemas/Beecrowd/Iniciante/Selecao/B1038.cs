@@ -1,7 +1,7 @@
 ﻿using Beecrowd.Template;
 using Beecrowd.Util;
 
-namespace Beecrowd.Iniciante;
+namespace Beecrowd.Iniciante.Selecao;
 internal class B1038 : Problema
 {
     public override void PMain()

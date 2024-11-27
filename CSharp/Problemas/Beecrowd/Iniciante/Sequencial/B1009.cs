@@ -1,7 +1,7 @@
 ﻿using Beecrowd.Template;
 using Beecrowd.Util;
 
-namespace Beecrowd.Iniciante;
+namespace Beecrowd.Iniciante.Sequencial;
 
 internal class B1009 : Problema
 {
@@ -13,7 +13,7 @@ internal class B1009 : Problema
         double salarioFixoFuncionario = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
         double totalVendasFuncionario = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture);
 
-        double total = salarioFixoFuncionario + (totalVendasFuncionario * 0.15);
+        double total = salarioFixoFuncionario + totalVendasFuncionario * 0.15;
 
         Console.WriteLine($"TOTAL = R$ {total.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)}");
     }

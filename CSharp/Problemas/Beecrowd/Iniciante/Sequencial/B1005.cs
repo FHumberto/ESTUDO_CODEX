@@ -2,7 +2,7 @@
 using Beecrowd.Util;
 using System.Globalization;
 
-namespace Beecrowd.Iniciante;
+namespace Beecrowd.Iniciante.Sequencial;
 
 internal class B1005 : Problema
 {
@@ -13,7 +13,7 @@ internal class B1005 : Problema
         double a = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
         double b = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        double media = ((a * 3.5) + (b * 7.5)) / 11;
+        double media = (a * 3.5 + b * 7.5) / 11;
 
         Console.WriteLine($"MEDIA = {media.ToString("F5", CultureInfo.InvariantCulture)}");
     }
