@@ -3,10 +3,10 @@ using Beecrowd.Util;
 
 ProblemasRegistrados problemasRegistrados = new();
 
-string? comando;
-
 try
 {
+    string? comando;
+    
     do
     {
         Console.WriteLine("Informe o número do problema: [1000, 1001, ...]");
